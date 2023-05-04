@@ -80,11 +80,7 @@ const navLinks = document.querySelectorAll('nav a');
     });
   });
 
-  const logoLink = document.querySelector('.navbar-brand');
-  logoLink.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = window.location.origin;
-  });
+
 
     
     const learnMoreBtn = document.getElementById("learn-more-btn");
