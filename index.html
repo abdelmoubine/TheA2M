@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TheA2M LCC</title>
+    <link rel="shortcut icon" href="img/fav-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <!-- navbar and hero image will go here -->
+    <header id="top">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img src="img/logo-Trans.png" width="250" alt="" title="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#top">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <div class="py-2"></div>
+
+    <main>
+          <section class="hero-image" id="aboutus">
+      <div class="container">
+        <div class="px-4 pt-5 my-5 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">TheA2M LLC</h1>
+            <p>TheA2M is a leading technology business in Moskva. We specialize in innovative software solutions that help businesses stay ahead of the curve and maximize their efficiency. Our experienced team of experts provides cutting-edge services that are tailored to each customer's unique needs. Let us help you get the best out of your technology!</p>
+            <a href="pages/error.html" class="btn btn-info" type="button">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    
+<!-- Services Section -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title">Our Services</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="img/AllTek.png" alt="Service 1">
+          <div class="card-body">
+            <h3 class="card-title">Mainteance</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis dolor quia ut natus earum. Necessitatibus iure, totam at molestias voluptas impedit non aspernatur atque, commodi laborum soluta. Nihil, quas.</p>
+            <a href="#" class="btn btn-primary" id="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="img/RestoCafe.png" alt="Service 2">
+          <div class="card-body">
+            <h3 class="card-title">My Resto Cafe</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis dolor quia ut natus earum. Necessitatibus iure, totam at molestias voluptas impedit non aspernatur atque, commodi laborum soluta. Nihil, quas.</p>
+            <a href="#" class="btn btn-primary" onclick="showMessage('under my resto cafe')">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title">Contact Us</h2>
+            
+          </div>
+        </div>
+        <h3 class="text-center">Get in touch with us...</h3>
+        <form action="contact.php" method="post" id="contact-form">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Alex Smith" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+            <span class="error-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Your text here" rows="5" required></textarea>
+          </div>
+    
+          <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Send</button>
+          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        </form>
+      </div>
+    </section>
+    
+    <!-- footer will go here -->
+<!-- footer will go here -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-inline text-center mb-3">
+          <li class="list-inline-item"><a href="https://fb.me/abdelmoubine2" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/abdelmoubine2" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/abdelmoubine" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="list-inline-item"><a href="https://github.com/abdelmoubine" target="_blank"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <p class="mb-0">&copy; <span id="currentYear"></span> - 
+          <a href="index.html" title="TheA2M Company" target="_parent">TheA2M</a>. All Rights Reserved.</p>
+        <p class="mb-0">Developed With ♥ By <a href="https://www.linkedin.com/in/abdelmoubine" title="Developeur" target="_blank">AbdelMoubine MISSAOUI</a></p>
+
+        <button class="btn btn-link scroll-to-top" onclick="scrollToTop()">
+          <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
