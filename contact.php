@@ -1,28 +1,31 @@
 <?php
-// Check if the form was submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  // Get the form fields and sanitize the input
-  $name = filter_var($_POST["full-name"], FILTER_SANITIZE_STRING);
-  $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-  $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-  // Validate the input
-  if (empty($name) || empty($email) || empty($message)) {
-    echo "Please fill in all the fields.";
-    exit;
-  }
+  // Get the form data
+  $full_name = $_POST['full-name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-  // Send the email
-  $to = "abdelmoubine@yandex.ru";
-  $subject = "New message from your website";
-  $body = "Name: $name\nEmail: $email\nMessage: $message";
-  $headers = "From: $email";
+  // Send an email with the form data
+  $to = 'abdelmoubine@yandex.ru';
+  $subject = 'New Contact Form Submission';
+  $body = "Full Name: $full_name\nEmail: $email\nMessage: $message";
+  $headers = "From: $email\r\n" .
+             "Reply-To: $email\r\n" .
+             "X-Mailer: PHP/" . phpversion();
 
   if (mail($to, $subject, $body, $headers)) {
-    echo "Thank you for contacting us!";
+    // Email sent successfully
+    echo 'Thank you for your message. We will be in touch shortly.';
   } else {
-    echo "There was an error sending your message. Please try again later.";
+    // Email failed to send
+    echo 'There was a problem sending your message. Please try again later.';
   }
+
+} else {
+  // Form was not submitted
+  echo 'Invalid request';
 }
+
 ?>
